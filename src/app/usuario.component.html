@@ -1,0 +1,10 @@
+<h1>Hola mi primer componente</h1>
+
+<!-- Binding manual usando propiedad y evento -->
+<input [hidden]="!visible" type="text" [value]="usuarioNombre" (input)="onInputChange($event)">
+<button [hidden]="!visible" (click)="onAgregarUsuario()">Agregar</button>
+
+
+<h2>{{ usuarioNombre }}</h2>
+
+<div *ngFor="let usr of usuarios">{{usr}}</div>
